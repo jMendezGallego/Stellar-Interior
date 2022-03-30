@@ -396,7 +396,7 @@ def find_TRL(X,Y,M_tot,R_tot,L_in,Tc_in):
     Error_min = np.zeros(np.size(errores,0))
     j_min = np.zeros(np.size(errores,0))
 
-    delta_L = 1
+    delta_L = 2
     delta_R = 0.1
 
     L = np.arange(L_in-(np.size(errores,0)-1)/2*delta_L,L_in+(np.size(errores,0)-1)/2*delta_L+0.1,delta_L)
@@ -482,9 +482,9 @@ def find_TRL(X,Y,M_tot,R_tot,L_in,Tc_in):
 
     L_in = L[I]
     R_tot = R[J]
-    
     return (Error_min,Tc,L_in,R_tot)
 
+    
 ##########################################################################
 ##########################################################################
 
@@ -495,14 +495,13 @@ def find_TRL(X,Y,M_tot,R_tot,L_in,Tc_in):
 
 X = 0.75
 Y = 0.2
-M_tot = 5.1
+M_tot = 10
 
 # Valores iniciales (varían cuando resolvemos la estrella)
 
-R_tot = 12
-L_in = 80
-
+R_tot = 18.7
+L_in = 1580
 # Valor inicial de la temperatura central
-T0 = 2
+T0 = 2.2
 
 Error_min,Tc,Lum,R = find_TRL(X,Y,M_tot,R_tot,L_in,T0)
