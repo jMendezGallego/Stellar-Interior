@@ -1,7 +1,7 @@
 # Stellar-Interior
 
-This is a stellar-interior numerical model.
-We use a star example with this parameters:
-M = 5.0
-X = 0.75
-Y = 0.20
+En este repositorio se almcena un modelo numérico de interior estelar. Se ha desarrollado para completar mi TFG y dispone de varios archivos.
+
+Stellar-Interior es el cuaderno principal y sirve para obtener las principales variables que describen el interior de una estrella. En él se presentan gráficas que analizan la dependencia de estos parámetros.
+
+HR diagram & M-L relation compara los datos obtenidos a partir de Stellar-Interior con datos de estrellas reales.
